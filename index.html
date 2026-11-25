@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隐私政策 · 网页翻译（轻盈界面版）</title>
+<style>
+  :root{
+    color-scheme:light dark;
+    --bg:#f6f7f9; --card:#fff; --ink:#1d242e; --ink-2:#4b5663; --ink-3:#7b8593;
+    --line:rgba(30,45,66,.10); --accent:#197ce5; --chip:#eef4fd;
+    --shadow:0 1px 2px rgba(20,35,55,.04),0 18px 48px rgba(20,35,55,.07);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#12161d; --card:#1b212a; --ink:#eef2f7; --ink-2:#b9c3cf; --ink-3:#8b95a2;
+      --line:rgba(255,255,255,.10); --accent:#65adff; --chip:rgba(101,173,255,.13);
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 18px 48px rgba(0,0,0,.35); }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:64px 24px 96px;}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--chip);color:var(--accent);
+    font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;letter-spacing:.2px;}
+  h1{font-size:31px;line-height:1.3;letter-spacing:-.6px;margin:18px 0 8px;font-weight:700;}
+  .meta{color:var(--ink-3);font-size:13.5px;margin:0 0 34px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:34px 34px 10px;box-shadow:var(--shadow);}
+  h2{font-size:17.5px;margin:30px 0 10px;letter-spacing:-.2px;font-weight:700;}
+  h2:first-child{margin-top:0;}
+  p,li{color:var(--ink-2);font-size:15px;}
+  p{margin:0 0 12px;}
+  ul{margin:0 0 14px;padding-left:20px;}
+  li{margin:6px 0;}
+  strong{color:var(--ink);font-weight:600;}
+  code{background:var(--chip);color:var(--accent);border-radius:5px;padding:1px 6px;font-size:13px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  .tag{display:inline-block;background:var(--chip);color:var(--accent);border-radius:6px;
+    padding:1px 8px;font-size:12.5px;font-weight:600;margin-right:6px;}
+  hr{border:0;border-top:1px solid var(--line);margin:26px 0;}
+  footer{color:var(--ink-3);font-size:13px;text-align:center;margin-top:28px;}
+  a{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Chrome 扩展程序 · 隐私政策</span>
+  <h1>网页翻译 · 轻盈界面版</h1>
+  <p class="meta">生效日期：2026 年 11 月 25 日　|　适用版本：1.8.0 及以上</p>
+
+  <div class="card">
+    <h2>一、概述</h2>
+    <p>「网页翻译 · 轻盈界面版」（以下简称"本扩展"）是一款帮助用户在浏览器中阅读外文网页的翻译工具。本政策说明本扩展会处理哪些信息、如何使用这些信息，以及你拥有的选择。</p>
+    <p><strong>核心承诺：</strong>本扩展不建立用户账号，不收集个人身份信息，不出售、不转让用户数据，不将数据用于广告投放、用户画像或信用评估。</p>
+
+    <hr>
+
+    <h2>二、本扩展处理的信息</h2>
+    <p><strong>1. 网页文字内容</strong></p>
+    <p>当你主动点击扩展图标、使用右键菜单或按下快捷键 <code>⌥T</code>（Windows 为 <code>Alt+T</code>）翻译网页时，本扩展会读取当前网页的可见文字，并将其发送至你所选择的机器翻译服务以获取译文。翻译完成后，译文被写回页面展示，本扩展<strong>不会保存</strong>原文或译文。</p>
+    <p><strong>2. 当前网页地址</strong></p>
+    <p>本扩展会读取当前标签页的网址，仅用于判断该网站是否在你的"自动翻译"或"跳过翻译"名单中。网址不会被发送给翻译服务以外的任何一方，也不会被本扩展保存或上传。</p>
+    <p><strong>3. 你的偏好设置</strong></p>
+    <p>目标语言、翻译引擎、是否自动翻译、是否自动切换备用引擎、跳过翻译的网站列表等设置，通过浏览器提供的 <code>chrome.storage</code> 保存在你本地的浏览器账户中。这些数据仅用于在下次使用时沿用你的选择，开发者无法读取，也不会同步至任何服务器。</p>
+    <p><strong>本扩展不会收集：</strong>姓名、邮箱、电话号码、身份证件、账号密码、精确位置、健康信息、财务与支付信息、个人通讯内容、鼠标点击与按键记录等任何个人身份信息。</p>
+
+    <hr>
+
+    <h2>三、第三方翻译服务</h2>
+    <p>翻译功能依赖以下第三方服务，仅在你主动触发翻译时接收待翻译的网页文字。这些服务由各自的提供方独立运营，其数据处理行为遵循该提供方的隐私政策：</p>
+    <ul>
+      <li><span class="tag">Google</span><code>translate.googleapis.com</code>、<code>clients5.google.com</code></li>
+      <li><span class="tag">腾讯</span>腾讯交互翻译 <code>transmart.qq.com</code></li>
+      <li><span class="tag">Microsoft</span>Microsoft Edge 翻译 <code>edge.microsoft.com</code>、<code>api-edge.cognitive.microsofttranslator.com</code></li>
+    </ul>
+    <p>本扩展不会向上述之外的任何域名发送数据，也不包含统计分析、广告或远程配置脚本。</p>
+
+    <hr>
+
+    <h2>四、数据共享与使用限制</h2>
+    <ul>
+      <li>我们不出售用户数据，也不向第三方转让用户数据。</li>
+      <li>我们不会将用户数据用于与本扩展单一用途（网页翻译）无关的目的。</li>
+      <li>我们不会将用户数据用于判定信用度或实现放贷。</li>
+      <li>除上述翻译服务外，我们不会与任何其他方共享数据。</li>
+    </ul>
+
+    <hr>
+
+    <h2>五、权限用途说明</h2>
+    <ul>
+      <li><strong>storage</strong>：保存翻译语言、引擎选择、自动翻译与跳过网站等偏好设置。</li>
+      <li><strong>contextMenus</strong>：在网页右键菜单中提供"翻译此网页 / 还原原文"入口。</li>
+      <li><strong>activeTab</strong>：在你主动操作时读取当前标签页的网址与文字，用于翻译。</li>
+      <li><strong>主机权限</strong>：访问第三部分列出的翻译服务接口，以及在网页中读取并回填文字。</li>
+    </ul>
+
+    <hr>
+
+    <h2>六、数据保留与删除</h2>
+    <p>本扩展不保留任何翻译内容。你可以随时在扩展的"偏好设置"页面点击"恢复默认设置"清除全部本地偏好；卸载扩展会一并删除本地保存的设置数据。</p>
+
+    <hr>
+
+    <h2>七、儿童隐私</h2>
+    <p>本扩展不面向 13 岁以下儿童设计，也不会主动收集儿童的个人信息。</p>
+
+    <hr>
+
+    <h2>八、政策变更</h2>
+    <p>若本政策发生实质性变更，我们会在本页面更新内容并同步修改生效日期。继续使用本扩展即表示你接受更新后的政策。</p>
+
+    <hr>
+
+    <h2>九、联系我们</h2>
+    <p>如对本政策或数据处理方式有疑问，可通过 Chrome 应用商店中本扩展页面的"支持"入口与我们联系。</p>
+  </div>
+
+  <footer>© 2026 网页翻译 · 轻盈界面版</footer>
+</div>
+</body>
+</html>
